@@ -1,0 +1,11 @@
+<h1>Enter your book info here</h1>
+ <%= simple_form_for @book do |f| %>
+    <%= f.input :title %>
+    <%= f.input :author %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit 'Post it!' %>
+
+
+
+  <% end %>
