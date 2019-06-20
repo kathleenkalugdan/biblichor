@@ -16,12 +16,16 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Biblichor</a>
+      
+      <%= link_to 'Biblichor', root_path , class: 'nav-link' %>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
           <li class="nav-item">
             <%= link_to 'See All Books', books_path , class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+           <%= link_to 'Add Book', new_book_path , class: 'nav-link' %>
           </li>
         
         </ul>

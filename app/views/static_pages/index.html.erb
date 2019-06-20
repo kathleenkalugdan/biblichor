@@ -1,2 +1,8 @@
 <h1>Books to Read</h1>
-<li><%= @books.inspect %></li>
+<% @books.each do |book| %>
+<ul>
+  <li><b><%=book.title %></b></li>
+    <br /><%=book.author %>
+    <br /><%=book.description %>
+</ul>
+<% end %>
