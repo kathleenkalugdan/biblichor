@@ -5,5 +5,8 @@
     Author: <i><%=book.author %></i>
     <br />
     <p><%=book.description %></p>
+     <% if book.user.present? %>
+      <small><%= book.user.email %></small>
+    <% end %>
 </ul>
 <% end %>
