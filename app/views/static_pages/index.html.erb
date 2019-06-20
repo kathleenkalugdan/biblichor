@@ -2,7 +2,8 @@
 <% @books.each do |book| %>
 <ul>
   <li><b><%=book.title %></b></li>
-    <br /><%=book.author %>
-    <br /><%=book.description %>
+    Author: <i><%=book.author %></i>
+    <br />
+    <p><%=book.description %></p>
 </ul>
 <% end %>
